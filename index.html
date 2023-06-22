@@ -9,60 +9,91 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header class="portfolio-header">
-        <h1>Shawn Bunch</h1>
-        <nav>
-            <ul>
-            <!-- Links to all my website sections -->
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#work">Work</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact Me</a>
-                </li>
-                <li>
-                    <a href="#resume">Resume</a>
-                </li>
-            </ul>
-        </nav>
+    <header>
+        <!-- Adding a container for easy visibility and uniformity across all screen sizes -->
+        <div class="container">
+            <nav>
+              <h1>Shawn Bunch</h1>
+              <ul>
+                <li class="portfolio-links"><a href="#about-me">About Me</a></li>
+                <li class="portfolio-links"><a href="#work">Work</a></li>
+                <li class="portfolio-links"><a href="#contact-me">Contact Me</a></li>
+                <li class="portfolio-links"><a href="#">Resume</a></li>
+              </ul>
+            </nav>
+          </div>
     </header>
-    <section class="banner">
-        <img>
-            <!-- Insert background image here -->
-        <img>
-            <!-- Insert avater here -->
-    </section>
-    <main class="portfolio-content">
-        <article id="about-me" class="portfolio-content-subdivision">
+    <section class="banner"></section>
+    <main>
+        <!-- About Me Section -->
+        <section id="about-me" class="container">
             <h2>About Me</h2>
-            <p>
-                <!-- Insert About Me here -->
-            </p>
-        </article>
-        <article id="work" class="portfolio-content-subdivision">
+            <section class="about-me-content">
+                <!-- <section id="first_para"></section> -->
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe consequatur magni dolorem harum mollitia ipsum repellendus nihil, possimus aspernatur nostrum perferendis sit quo assumenda repudiandae similique nam sunt! Dolorem, repudiandae.
+                </p>
+            </section>
+        <!-- Work section with projects -->
+        <section id="work" class="container">
             <h2>Work</h2>
-            <!-- Projects to go here -->
-        </article>
-        <article id="contact-me" class="portfolio-content-subdivision">
+            <section class="tiles">
+                <article class="projects" id="horison">
+                    <a href="https://github.com/shbunch/horiseon-accessibility-refactor" target="_blank">
+                        <img src="./assets/images/horiseon.png" alt="horiseon accessibility refactor"/></a>
+                        <span class="project-title">
+                            <h4>Horiseon Accessibility Refactor</h4>
+                        </span>
+                </article>
+                <!-- https://unsplash.com/photos/6KpKIPLOBnc -->
+                <article class="projects" id="ledwall">
+                        <img src="./assets/images/ledwall.avif" alt="LED wall"/></a>
+                        <span class="project-title">
+                            <h4>LED Wall</h4>
+                        </span>
+                </article>
+                <!-- https://unsplash.com/photos/i1Ov6Irqego -->
+                <article class="projects" id="calculator">
+                        <img src="./assets/images/calculator.avif" alt="calculator"/></a>
+                        <span class="project-title">
+                            <h4>Calculator</h4>
+                        </span>
+                </article>
+                <!-- https://unsplash.com/photos/B-x4VaIriRc -->
+                <article class="projects" id="pastelpuzzles">
+                        <img src="./assets/images/puzzle.avif" alt="pastel puzzles"/></a>
+                        <span class="project-title">
+                            <h4>Pastel Puzzles</h4>
+                        </span>
+                </article>
+                <!-- https://unsplash.com/photos/PHIgYUGQPvU -->
+                <article class="projects" id="runbuddy">
+                        <img src="./assets/images/runbuddy.avif" alt="run buddy"/></a>
+                        <span class="project-title">
+                            <h4>Run Buddy</h4>
+                        </span>
+                </article>
+            </section>
+        </section>
+        <!-- Contact Me section -->
+        <section id="contact-me" class="container">
             <h2>Contact Me</h2>
             <ul>
-                <li>
-                    <!-- Phone number -->
+                <li class="contact-links">
+                    <a href="tel:(862) 432-2859">Phone</a>
                 </li>
-                <li>
-                    <!-- Email -->
+                <li class="contact-links">
+                    <a href="mailto:shawnbunch@gmail.com">Email</a>
                 </li>
-                <li>
-                    <!-- GitHub -->
+                <li class="contact-links">
+                    <a href="https://github.com/shbunch" target="_blank">Github</a>
+                </li>
+                <li class="contact-links">
+                    <a href="https://www.linkedin.com/in/shawn-bunch-51504855" target="_blank">LinkedIn</a>
                 </li>
             </ul>
-        </article>
+        </section>
     </main>
-    <footer class="footer">
-        <!-- Insert footer here -->
-    </footer>
+    <footer><!-- Insert footer here --></footer>
 </body>
 </html>
